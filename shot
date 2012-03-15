@@ -1,0 +1,11 @@
+#!/bin/bash
+
+#
+# Arguments: 
+# 	$1: - page url
+# 	$2: - destination path
+#
+
+SCRIPT_DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+phantomjs $SCRIPT_DIR/lib/single.js $1 $2

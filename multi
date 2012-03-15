@@ -1,0 +1,10 @@
+#!/bin/bash
+
+#
+# Arguments: 
+# 	$1: - configuration file
+#
+
+SCRIPT_DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
+
+phantomjs $SCRIPT_DIR/lib/multiple.js $PWD/$1
