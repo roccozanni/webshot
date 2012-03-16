@@ -1,11 +1,15 @@
 #!/bin/bash
 
-#
-# Arguments: 
-# 	$1: - page url
-# 	$2: - destination path
-#
-
 SCRIPT_DIR="$( cd -P "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-phantomjs $SCRIPT_DIR/lib/single.js $1 $2
+if [ -z $1 ]; then
+    echo "Usage: shot <url> <destination_filepath>"
+    echo "Or   : shot <configuration_file>"
+    exit 255
+fi
+
+if [ -z $2 ]; then
+	phantomjs $SCRIPT_DIR/lib/multiple.js $PWD/$1 
+else
+	phantomjs $SCRIPT_DIR/lib/single.js $1 $2	
+fi

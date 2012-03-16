@@ -30,6 +30,6 @@ that configures the script with:
 - directory used for archiving screenshots
 - urls of the web pages to grab
 
-    ./multi "/path/to/configuration.js"
+    ./shot "/path/to/configuration.js"
 
 The screenshots will be saved in the archive directory, grouped by url, and with a timestamp-like filename for easy sort.
