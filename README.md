@@ -33,3 +33,10 @@ that configures the script with:
     ./shot "/path/to/configuration.js"
 
 The screenshots will be saved in the archive directory, grouped by url, and with a timestamp-like filename for easy sort.
+
+
+Troubleshooting
+-----
+
+Tested on:
+- MacOS X 10.7 with PhantomJS 1.4.1
