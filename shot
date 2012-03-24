@@ -9,7 +9,7 @@ if [ -z $1 ]; then
 fi
 
 if [ -z $2 ]; then
-	phantomjs $SCRIPT_DIR/lib/multiple.js $PWD/$1 
+	phantomjs $SCRIPT_DIR/lib/multiple.js $1 
 else
 	phantomjs $SCRIPT_DIR/lib/single.js $1 $2	
 fi
